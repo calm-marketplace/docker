@@ -7,8 +7,5 @@
   user: centos
   connection: local # or ssh or paramiko
 
-  tasks:
-      - shell: ansible-galaxy install geerlingguy.docker
-
   roles:
       - geerlingguy.docker
