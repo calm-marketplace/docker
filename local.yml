@@ -1,0 +1,14 @@
+---
+## docker install via galaxy@ansible.com
+## by @tfindelkind
+
+- name: Install geerlingguy.docker from galaxy.ansible.com
+  command: ansible-galaxy install geerlingguy.docker
+
+- name:
+  hosts: localhost
+  user: centos
+  connection: local # or ssh or paramiko
+
+  roles:
+      - geerlingguy.docker
