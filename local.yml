@@ -5,7 +5,7 @@
 - name: Install geerlingguy.docker from galaxy.ansible.com
   command: ansible-galaxy install geerlingguy.docker
 
-- name:
+- name: Run playbook of geerlingguy.docker 
   hosts: localhost
   user: centos
   connection: local # or ssh or paramiko
