@@ -1,11 +1,14 @@
 ---
 ## docker install via galaxy@ansible.com
-## by @tfindelkind
+## by @tfindelkind for calm-marketplace
 
 - name: Run playbook of geerlingguy.docker
   hosts: localhost
   user: centos
   connection: local # or ssh or paramiko
+
+  tasks:
+      - shell: sudo usermod -aG docker centos
 
   roles:
       - geerlingguy.docker
