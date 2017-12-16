@@ -7,12 +7,5 @@
   user: centos
   connection: local # or ssh or paramiko
 
-  tasks:
-      - name: create group docker
-      - shell:  sudo groupadd docker
-
-      - name: add user centos to group docker
-      - shell: sudo usermod -aG docker centos 
-
   roles:
       - geerlingguy.docker
